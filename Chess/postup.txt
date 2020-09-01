@@ -1,0 +1,13 @@
+You get input from the user for his move. [EnterMove function]
+You check the legality and the validity of the move entered [ElegxosNomimotitas and ElegxosOrthotitas functions, which also utilize the CheckForWhiteCheck and CheckForBlackCheck functions to check if there is a check in the position]
+If the move is legal and valid, then do the move. [call drawPosition function to redraw the chessboard; note that the Java edition of the program only prints the chessboard in text]
+Exercise for you: Add graphics to the application. (use the C# edition ot get some insight on how you could do that)
+Call the function which makes the computer think. [ComputerMove function]
+Scan the chessboard to find all the pieces of the computer. In the sample code provided for Java, this means that it scans for all the black pieces since the program is made only for the computer to play with black.
+Exercise for you: Add the ability for the program to play with white as well)
+For each piece of the computer, check all possible moves to all possible squares of the chessboard.
+If you find a valid move (by invoking the ElegxosNomimotitas and ElegxosOrthotitas functions) then do the move and count the score of the position. [CountScore function: This is one of the most central functions of the program; changing it makes the computer play differently according to the values you assign to pieces or to elements of the chessboard like empty ranks, concentration of the pieces at the center et cetera]
+If the score of the move is better than the so far better score, then store this position as the best one. (Note: The program stores the first position analyzed as ‘best’ anyway, so that there is a starting point for the best score)
+Exercise for you: Change the values in the CountScore function to improve the playing abilities of the computer)
+Do the best move found and redraw the chessboard.
+Wait for next user input. [call EnterMove function again]
