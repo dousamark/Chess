@@ -32,7 +32,6 @@ namespace Chess
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.board = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.board)).BeginInit();
             this.SuspendLayout();
@@ -40,11 +39,11 @@ namespace Chess
             // board
             // 
             this.board.BackColor = System.Drawing.Color.Transparent;
-            this.board.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("board.BackgroundImage")));
+            this.board.BackgroundImage = global::Chess.Properties.Resources.chess_board;
             this.board.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.board.Location = new System.Drawing.Point(0, 0);
             this.board.Name = "board";
-            this.board.Size = new System.Drawing.Size(800, 800);
+            this.board.Size = new System.Drawing.Size(798, 818);
             this.board.TabIndex = 0;
             this.board.TabStop = false;
             // 
@@ -53,7 +52,7 @@ namespace Chess
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1198, 944);
+            this.ClientSize = new System.Drawing.Size(798, 944);
             this.Controls.Add(this.board);
             this.Name = "Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
